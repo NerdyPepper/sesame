@@ -37,8 +37,7 @@ They are the building blocks of quantum circuits, similar to classical logic gat
 Unlike classical gates, which apply mathematical reasoning to produce outputs, 
 quantum gates rotate probabilities, and produce a superposition of qubits as outputs.
 
-\subsection{Hadamard (H) gate}
-
+\subsection{ Hadamard (H) Gate }
 The Hadamard gate acts on a single qubit. It is a \underline{single qubit
 rotation mapping} of basis states.
 \\
@@ -53,7 +52,6 @@ respectively.
 \end{figure}
 
 \subsection{ Pauli-X Gate }
-
 The Pauli-X gate acts on a single qubit. It is the quantum analog of the NOT gate. 
 \\
 \par
@@ -66,5 +64,41 @@ Since it maps $\ket{0}$ to $\ket{1}$ and vice-versa, it is also known as a
 \includegraphics[width=4cm]{paulix}
 \centering
 \end{figure}
+
+\subsection{ Controlled-NOT Gate }
+Controlled-NOT (CNOT) gate is an essential component to any quantum circuit. Any quantum
+circuit can be expressed as a combination of CNOT gates with a certain degree of 
+accuracy.
+\\
+\par
+\pagebreak
+The CNOT gate operates on 2 qubits. It flips the second input ("target") if and only 
+if the first qubit ("control") is $\ket{1}$.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{ |c|c|c|c|  }
+        \hline
+        \multicolumn{2}{|c}{Before} & \multicolumn{2}{|c|}{After} \\
+        \hline
+        Control & Target & Control & Target\\
+        \hline
+        $\ket{0}$ & $\ket{0}$ & $\ket{0}$ & $\ket{0}$ \\
+        $\ket{0}$ & $\ket{1}$ & $\ket{0}$ & $\ket{1}$ \\
+        $\ket{1}$ & $\ket{0}$ & $\ket{1}$ & $\ket{1}$ \\
+        $\ket{1}$ & $\ket{1}$ & $\ket{1}$ & $\ket{0}$ \\
+        \hline
+    \end{tabular}
+\end{table}
+The behaviour of the CNOT gate appears to be very classical according to this table. 
+The complexity of this gate is reflected when used in conjunction with the Hadamard
+gate (used in Grover's algorithm).
+
+
+\begin{figure}[h]
+\includegraphics[width=4cm]{cnot}
+\centering
+\end{figure}
+
 
 \end{document}
