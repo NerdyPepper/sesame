@@ -102,22 +102,24 @@ gate (used in Grover's algorithm).
 \pagebreak
 
 
+% ===============================================
 \section{ Unstructured Search }
-Grover's algorithm is typically used to solve unstructured search problems. Unstructured
-refers to databases \underline{with no order}, i.e, true random distribution of elements. 
+
+Grover's algorithm is typically used to solve unstructured search problems.
+Unstructured refers to databases \underline{with no order}, i.e, true random
+distribution of elements. 
 \\
 \par
 
-Suppose we are given a list of $N$ elements. Among these elements, there is one element
-$w$, the "winner". The problem of locating the position of this element $w$ is called an
-unstructured search problem.
-$$ 1, 2, 3, \cdots w \cdots N $$ 
-\\
-\par
+Suppose we are given a list of $N$ elements. Among these elements, there is one
+element $w$, the "winner". The problem of locating the position of this element
+$w$ is called an unstructured search problem.  $$ 1, 2, 3, \cdots w \cdots N $$
+\\ \par
 
-Mathematically, in an unstructured search problem, given a set of $N$ elements, forming
-a set $X = \{X_1, X_2, X_3 \ldots X_n\} $, and given a boolean function $f: X \to \{0, 1\}$,
-the goal is to find an element $u$ such that $f(u) = 1$, where $f(x)$ is given by:
+Mathematically, in an unstructured search problem, given a set of $N$ elements,
+forming a set $X = \{X_1, X_2, X_3 \ldots X_n\} $, and given a boolean function
+$f: X \to \{0, 1\}$, the goal is to find an element $u$ such that $f(u) = 1$,
+where $f(x)$ is given by:
 
 \[
     f(x) = \left\{
@@ -132,6 +134,18 @@ the goal is to find an element $u$ such that $f(u) = 1$, where $f(x)$ is given b
 
 
 \section{ Grover's Method }
+Consider the list of $N$ elements as proposed in \textbf{Section 3}. Before
+looking at the list of items, we have no idea where the marked item is.
+Therefore, any guess of its location is as good as any other. Grover's algorithm
+tries to increase the probability of finding $w$ and reduce the probability of 
+finding other elements, through a process knows as Amplitude Amplification.
+\\
+\par
 
+To explain Amplitude Amplification classically, consider an opaque bag of $N$
+balls, one of which is red. The probability of picking the pink ball is
+$\frac{1}{N}$.  Grover's algorithm increases the size of the pink ball, making
+it 10 times the size of the other balls, and reduces the size of the remaining
+balls, thereby increasing the probability of finding the pink ball (the "winner").
 
 \end{document}
