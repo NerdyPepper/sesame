@@ -10,14 +10,40 @@
 Grover's algorithm is a quantum algorithm that finds, with high probability,
 the input to an unknown function, given the output value. It finds this value
 in $ O(\sqrt{N}) $ evaluations of the function over the database.
+\\
+\par
+If was invented by Lov Grover in the year 1996. It was proved in 1997, by
+Bennet Bernstein, that any quantum search algorithm has to perform atleast $
+O(\sqrt{N}) $ of the function, hence, Grover's algorithm is almost optimal.
+\\
+\par
+Like most quantum algorithms, Grover's algorithm is probablistic in nature.
+That is, the probability of the algorithm producing the correct answer is less
+than 1.  It \textit{is} possible to produce the correct answer all the time,
+but at the cost of runtime (repeating the number of iterations improves the
+probability).
 
-If was invented by Lov Grover in the year 1996. It was proved in 1997, 
-by Bennet Bernstein, that any quantum search algorithm has to perform atleast 
-$ O(\sqrt{N}) $ of the function, hence, Grover's algorithm is almost optimal.
+\pagebreak
 
-Like most quantum algorithms, Grover's algorithm is probablistic in nature. 
-That is, the probability of the algorithm producing the correct answer is less than 1.
-It \textit{is} possible to produce the correct answer all the time, but at the cost 
-of runtime (repeating the number of iterations improves the probability).
+
+% ===============================================
+\section{Quantum Gates used in Grover's Algorithm}
+
+In quantum computing, the basic operations on qubits are performed by quantum gates.
+They are the building blocks of quantum circuits, similar to classical logic gates.
+\\
+\par
+Unlike classical gates, which apply mathematical reasoning to produce outputs, 
+quantum gates rotate probabilities, and produce a superposition of qubits as outputs.
+
+\subsection{Hadamard (H) gate}
+
+The Hadamard gate acts on a single qubit. It is a \underline{single qubit
+rotation mapping} of basis states.
+
+\begin{figure}[h]
+\includegraphics[width=8cm]{hadamard}
+\centering
+\end{figure}
 
 \end{document}
