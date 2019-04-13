@@ -99,5 +99,39 @@ gate (used in Grover's algorithm).
 \centering
 \end{figure}
 
+\pagebreak
+
+
+\section{ Unstructured Search }
+Grover's algorithm is typically used to solve unstructured search problems. Unstructured
+refers to databases \underline{with no order}, i.e, true random distribution of elements. 
+\\
+\par
+
+Suppose we are given a list of $N$ elements. Among these elements, there is one element
+$w$, the "winner". The problem of locating the position of this element $w$ is called an
+unstructured search problem.
+$$ 1, 2, 3, \cdots w \cdots N $$ 
+\\
+\par
+
+Mathematically, in an unstructured search problem, given a set of $N$ elements, forming
+a set $X = \{X_1, X_2, X_3 \ldots X_n\} $, and given a boolean function $f: X \to \{0, 1\}$,
+the goal is to find an element $u$ such that $f(u) = 1$, where $f(x)$ is given by:
+
+\[
+    f(x) = \left\{
+        \begin{array}{ll}
+            0 & \mbox{if } x \neq u \\
+            1 & \mbox{if } x = u \\
+        \end{array}
+        \right.
+\]
+
+\pagebreak
+
+
+\section{ Grover's Method }
+
 
 \end{document}
