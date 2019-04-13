@@ -35,7 +35,15 @@
  - Hidden variable theory
  - O(cbrt(N)) time complexity improvement
 
-### Applications and Limitations
+### Applications
+
+ - used for function inversion
+ - y = f(x) => find x for given y
+ - mean median problems
+ - collision problems
+ - break encryption
+
+### Limitations
 
  - expression of database as quantum superposition
- - 
+ - construction of oracle function
