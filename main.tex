@@ -13,9 +13,10 @@ the input to an unknown function, given the output value. It finds this value
 in $ O(\sqrt{N}) $ evaluations of the function over the database.
 \\
 \par
-If was invented by Lov Grover in the year 1996. It was proved in 1997, by
-Bennet Bernstein, that any quantum search algorithm has to perform atleast $
-O(\sqrt{N}) $ of the function, hence, Grover's algorithm is almost optimal.
+
+Much before its invention by Lov Grover in 1996, it was proved that any quantum
+algorithm would have to perform atleast $O(\sqrt{N})$ evaluations of the
+function, hence, Grover's algorithm is almost optimal.
 \\
 \par
 Like most quantum algorithms, Grover's algorithm is probablistic in nature.
@@ -72,8 +73,8 @@ accuracy.
 \\
 \par
 \pagebreak
-The CNOT gate operates on 2 qubits. It flips the second input ("target") if and only 
-if the first qubit ("control") is $\ket{1}$.
+The CNOT gate operates on 2 qubits. It flips the second input (``target") if and only 
+if the first qubit (``control") is $\ket{1}$.
 
 \begin{table}[h!]
     \centering
@@ -112,7 +113,7 @@ distribution of elements.
 \par
 
 Suppose we are given a list of $N$ elements. Among these elements, there is one
-element $w$, the "winner". The problem of locating the position of this element
+element $w$, the ``winner". The problem of locating the position of this element
 $w$ is called an unstructured search problem.  $$ 1, 2, 3, \cdots w \cdots N $$
 \\ \par
 
@@ -133,6 +134,7 @@ where $f(x)$ is given by:
 \pagebreak
 
 
+% ===============================================
 \section{ Grover's Method }
 Consider the list of $N$ elements as proposed in \textbf{Section 3}. Before
 looking at the list of items, we have no idea where the marked item is.
@@ -146,6 +148,6 @@ To explain Amplitude Amplification classically, consider an opaque bag of $N$
 balls, one of which is red. The probability of picking the pink ball is
 $\frac{1}{N}$.  Grover's algorithm increases the size of the pink ball, making
 it 10 times the size of the other balls, and reduces the size of the remaining
-balls, thereby increasing the probability of finding the pink ball (the "winner").
+balls, thereby increasing the probability of finding the pink ball (the ``winner").
 
 \end{document}
