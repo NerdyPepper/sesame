@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 \usepackage{graphicx}
+\usepackage{braket}
 \graphicspath{ {./images/} }
 
 \begin{document}
@@ -40,10 +41,19 @@ quantum gates rotate probabilities, and produce a superposition of qubits as out
 
 The Hadamard gate acts on a single qubit. It is a \underline{single qubit
 rotation mapping} of basis states.
+\\
+\par
+The Hadamard gate maps the basis states $\ket{0}$ and $\ket{1}$ to 
+$ \frac{\ket{0} + \ket{1}}{\sqrt2}$ and $ \frac{\ket{0} - \ket{1}}{\sqrt2}$ 
+respectively.
 
 \begin{figure}[h]
-\includegraphics[width=8cm]{hadamard}
+\includegraphics[width=4cm]{hadamard}
 \centering
 \end{figure}
+
+\subsection{ Pauli-X Gate }
+
+The Pauli-X gate acts on a single qubit. 
 
 \end{document}
