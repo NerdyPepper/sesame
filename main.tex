@@ -214,9 +214,24 @@ gate (used in Grover's algorithm).
 % ===============================================
 \section{ Unstructured Search }
 
+~~~~The phrase unstructured data usually refers to information that doesn't reside
+in a traditional row-column database. There is no ``predefined" data model to 
+represent unstructured data.
+\\
+\par
+
+Unstructured data often includes text and multimedia content. Examples
+include e-mail messages, word processing documents, videos, photos, audio
+files, presentations, webpages and many other kinds of business documents. Note
+that while these sorts of files may have an internal structure, they are still
+considered ``unstructured" because the data they contain doesn't fit neatly in a
+database. It is very difficult to analyze and infer unstructured data.
+\\
+\par
+
 Grover's algorithm is typically used to solve unstructured search problems.
-Unstructured refers to databases \underline{with no order}, i.e, true random
-distribution of elements. 
+Unstructured refers to databases \underline{with no defined data model}, i.e,
+true random distribution of elements. 
 \\
 \par
 
@@ -387,7 +402,7 @@ Which is the result after the first iteration:
 Like most quantum algorithms, Grover's Algorithm is a probablistic algorithm.
 The probablity of recieving the correct answer is less than 1. After
 approximately $\sqrt{N}$ cycles of Oracle and Grover operator, the probablity
-of finding the correct element reaches \url{~}1.
+of finding the correct element reaches 1 approximately.
 \\
 \par
 The analogous search problem in classical computing cannot be solved in fewer
