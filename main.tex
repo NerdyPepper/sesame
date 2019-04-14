@@ -226,6 +226,7 @@ amplitude of the correct answer will stand out more
 \centering
 \end{figure}
 
+% ================================================
 \section{ A more Mathematical Approach }
 
 After setting up the quantum state and applying the Oracle function, the 
@@ -251,6 +252,28 @@ The state after the Grover operation becomes:
     = & (2\ket{\psi}\bra{\psi} - I) \left[ \ket{\psi} - \frac{2}{2\sqrt{2}}\ket{001} \right] \\
     = & 2\ket{\psi}\braket{\psi|\psi} - \ket{\psi} - \frac{2}{\sqrt{2}}\ket{\psi}\braket{\psi|011} + \frac{1}{\sqrt{2}}\ket{011}
 \end{align*}
+
+On substituting the inner product, $\braket{\psi|011} = \braket{011|\psi} = \frac{1}{2\sqrt{2}}$:
+
+\begin{align*}
+    & 2\ket{\psi}\braket{\psi|\psi} - \ket{\psi} - \frac{2}{\sqrt{2}}\ket{\psi}\braket{\psi|011} + \frac{1}{\sqrt{2}}\ket{011} \\
+    = & 2\ket{\psi} - \ket{\psi} - \frac{2}{\sqrt{2}}\left(\frac{1}{2\sqrt{2}}\right)\ket{\psi} + \frac{1}{\sqrt{2}}\ket{011} \\
+    = & \frac{1}{2}\ket{\psi} + \frac{1}{\sqrt{2}}\ket{011}
+\end{align*}
+
+Replacing $\ket{\psi}$ as the superposition, we get the final state as:
+
+$$ = \frac{1}{4\sqrt{2}}\sum_{x \neq 3}{\ket{x}} + \frac{5}{4\sqrt{2}}\ket{011} $$
+
+Which is the result after the first iteration:
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{reflip_increased}
+\centering
+\end{figure}
+
+\pagebreak
+
 
 
 \end{document}
