@@ -199,4 +199,30 @@ The second and last step of Grover’s iterative process is applying Grover’s 
 
 $$ G = (2\ket{\psi}\bra{\psi} - I)O $$
 
+Grover’s operator flips every amplitude around the average line:
+
+$$ (2\ket{\psi}\bra{\psi} - I)\sum{a_i \ket{i}} = \sum{(2\braket{a} - a_i)\ket{i}} $$
+
+So after applying Grover’s operator, the superposition becomes:
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{reflip_increased}
+\centering
+\end{figure}
+
+So, if we make a measurement of the quantum state, the probability of it
+collapsing into the ``winner" is greater. If we measure the qubits now, we
+still have a reasonable chance of selecting the wrong answer. So we repeat this
+process square root times $\sqrt(N)$ to amplify the amplitude of the right answer.
+
+\pagebreak
+
+For example, if we repeat the Oracle and the Grover operator once more, the
+amplitude of the correct answer will stand out more
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{reflip_2}
+\centering
+\end{figure}
+
 \end{document}
