@@ -148,6 +148,34 @@ To explain Amplitude Amplification classically, consider an opaque bag of $N$
 balls, one of which is red. The probability of picking the red ball is
 $\frac{1}{N}$.  Grover's algorithm increases the size of the red ball, making
 it 10 times the size of the other balls, and reduces the size of the remaining
-balls, thereby increasing the probability of finding the pink ball (the ``winner").
+balls, thereby increasing the probability of finding the red ball (the ``winner").
+\\
+\par
+
+\subsection{ State Setup }
+We need to set up a quantum state, which we will use as our search space. It should 
+contain an unstructured set of elements, each with equal probability of occurance. 
+\\
+\par
+This can be prepared as a superposition of qubits as follows:
+
+$$ \ket{\psi} = H^{n}\ket{0}^{n} $$
+
+Thus, a quantum state prepared using 3 qubits:
+
+\[
+    H^{3}\ket{000} = \frac{1}{2\sqrt{2}}\ket{000} +
+    \frac{1}{2\sqrt{2}}\ket{001} + \cdots + \frac{1}{2\sqrt{2}}\ket{111} 
+\]
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{init_amp}
+\centering
+\end{figure}
+
+After the state preparation, the Grover’s algorithm turns into an iterative
+process which composes of multiple iterations of Oracle function and the Grover
+operator.
+\pagebreak
 
 \end{document}
