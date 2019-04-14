@@ -3,9 +3,12 @@
 \usepackage{braket}
 \usepackage{amsmath}
 \usepackage{url}
+\usepackage{hyperref}
 \graphicspath{ {./images/} }
 
 \begin{document}
+\tableofcontents
+\pagebreak
 
 % ================================================
 \section{Introduction}
@@ -228,7 +231,7 @@ amplitude of the correct answer will stand out more
 \end{figure}
 
 % ================================================
-\section{ A more Mathematical Approach }
+\section{ A More Mathematical Approach }
 
 After setting up the quantum state and applying the Oracle function, the 
 superposition is:
@@ -250,7 +253,7 @@ The state after the Grover operation becomes:
 
 \begin{align*}
     & (2\ket{\psi}\bra{\psi} - I)\ket{x} \\
-    = & (2\ket{\psi}\bra{\psi} - I) \left[ \ket{\psi} - \frac{2}{2\sqrt{2}}\ket{001} \right] \\
+    = & (2\ket{\psi}\bra{\psi} - I) \left[ \ket{\psi} - \frac{2}{2\sqrt{2}}\ket{011} \right] \\
     = & 2\ket{\psi}\braket{\psi|\psi} - \ket{\psi} - \frac{2}{\sqrt{2}}\ket{\psi}\braket{\psi|011} + \frac{1}{\sqrt{2}}\ket{011}
 \end{align*}
 
@@ -341,5 +344,25 @@ between the constraint function and the search algorithm to prevent exhaustive s
 In the near future, Grover's algorithm running on a quantum computer cannot compete
 with the best classical computers in practical applications, such as a Web search, because
 Grover's algorithm cannot take advantage of structure present in data, if any.
+
+\pagebreak
+
+
+% ================================================
+\section{ Bibliography }
+
+Most of the information in this document has been borrowed from the following 
+sources:
+
+\begin{enumerate}
+    \item \href{https://medium.com/@jonathan_hui/qc-grovers-algorithm-cd81e61cf248}{Grover's Search by Jonathan Hui}
+    \item \href{https://web.eecs.umich.edu/~imarkov/pubs/jour/cise05-grov.pdf}{'Is Quantum Search Practical' by John P. Hayes}
+    \item \href{https://www.scottaaronson.com/papers/qchvpra.pdf}{'Quantum computing and Hidden Variables' by Scott Aaronson}
+    \item \href{https://quantumexperience.ng.bluemix.net/proxy/tutorial/full-user-guide/004-Quantum_Algorithms/}{'Grovers Algorithm' by IBM Q}
+\end{enumerate}
+
+This document was written in \LaTeX ~and can be compiled using the texlive package. The 
+source of this document is completely free and open source.
+It is available at \url{https://github.com/nerdypepper/sesame}.
 
 \end{document}
