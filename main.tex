@@ -328,6 +328,18 @@ The applications of Grover's algorithm include (but are not limited to):
 namely:
 
 \begin{enumerate}
+        \item The database is expressed in the form of a superposition of qubits
+        \item Black-boxed Oracle function. It is assumed that the Oracle function
+            is computable on a quantum computer
 \end{enumerate}
+\par
+Further, the separation of Oracle function (to evaluate the constraint) from the actual
+search algorithm, prevents optimiztion. Classical algorithms take advantage of the relation
+between the constraint function and the search algorithm to prevent exhaustive search.
+\par
+
+In the near future, Grover's algorithm running on a quantum computer cannot compete
+with the best classical computers in practical applications, such as a Web search, because
+Grover's algorithm cannot take advantage of structure present in data, if any.
 
 \end{document}
