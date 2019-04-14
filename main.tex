@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{braket}
 \usepackage{amsmath}
+\usepackage{url}
 \graphicspath{ {./images/} }
 
 \begin{document}
@@ -274,6 +275,59 @@ Which is the result after the first iteration:
 
 \pagebreak
 
+% ================================================
+\section{ Time Complexity of Grover's Algorithm }
 
+Like most quantum algorithms, Grover's Algorithm is a probablistic algorithm.
+The probablity of recieving the correct answer is less than 1. After
+approximately $\sqrt{N}$ cycles of Oracle and Grover operator, the probablity
+of finding the correct element reaches \url{~}1.
+\\
+\par
+The analogous search problem in classical computing cannot be solved in fewer
+than $O(N)$ evaluations, because, in the worst case, the $N^{th}$ element could
+be the correct element.
+\\
+\par
+\subsection{Hidden Variable Method}
+~~~It has been theorized that a non-local hidden variable quantum computer could implement
+a search in an $N$-item database in approximately $O(\sqrt[3]{N})$ evaluations. Hidden
+variable theories suggest that quantum mechanics do not give a complete description
+of a quantum state, i.e., quantum mechanics is an \underline{incomplete theory}. A complete
+theory to explain the physics of the particles we know, would eradicate all indeterminism.
+
+\subsection{Optimality of Grover's Algorithm}
+Grover's algorithm is optimal. Any algorithm that accesses a database using an Oracle
+function would \textit{have to} apply it as many times as Grover's algorithm.
+\\
+\par
+Grover's algorithm suggests that all NP(non-deterministic polynomial time) 
+complete problems fall under BQP(bounded error quantum polynomial) problems, because
+all NP complete problems could potentially be converted into Grover-type search problems,
+but it does not prove the relation.
+
+\pagebreak
+
+
+% ================================================
+\section{ Applications }
+~~~Grover's algorithm, in general, can be described as an algorithm to invert a function.
+In other words, if $y = f(x)$ can be evaluated on a quantum computer, Grover's algorithm
+computes $x$ for a given $y$.
+\\
+The applications of Grover's algorithm include (but are not limited to):
+\begin{enumerate}
+        \item Estimating the mean of a database
+        \item Estimating the median of a database 
+        \item Break cryptographic hash functions 
+        \item searching databases
+\end{enumerate}
+
+\section { Limitations }
+~~~The comparision of classical to quantum algorithms make some rather bold assumptions,
+namely:
+
+\begin{enumerate}
+\end{enumerate}
 
 \end{document}
