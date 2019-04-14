@@ -178,4 +178,25 @@ process which composes of multiple iterations of Oracle function and the Grover
 operator.
 \pagebreak
 
+\subsection{ The Oracle }
+The Oracle function encodes the function $f(x)$ into the list of $N$ items, where
+$f$ returns $f(x) = 0$ for all unmarked items and $f(u) = 1$ where $u$ is the 
+``winner". The Oracle transformation can be defined for a given state $\ket{x}$ as:
+
+$$ U_f\ket{x} = (-1)^{f(x)}\ket{x} $$
+\par
+
+Any $\ket{x}$ with $f(x) = 0$ is not modified, whereas any $\ket{x}$ with $f(x) = 1$
+is flipped to have negative amplitude.
+
+\begin{figure}[h]
+\includegraphics[width=10cm]{flipped_amp}
+\centering
+\end{figure}
+
+\subsection{ Grover’s Operator }
+The second and last step of Grover’s iterative process is applying Grover’s operator:
+
+$$ G = (2\ket{\psi}\bra{\psi} - I)O $$
+
 \end{document}
