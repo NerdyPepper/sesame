@@ -1,4 +1,4 @@
-<p style="text-align: center"><b>Grover's Algorithm</b></div>
+<p align="center"><b>Grover's Algorithm</b></div>
 
 ### Obtain a copy of the report
 
